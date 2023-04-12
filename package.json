@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.13",
     "@hookform/resolvers": "^3.0.1",
     "@next-auth/upstash-redis-adapter": "^3.0.4",
     "@tailwindcss/forms": "^0.5.3",
@@ -26,6 +27,8 @@
     "next": "13.3.0",
     "next-auth": "^4.22.0",
     "postcss": "8.4.21",
+    "pusher": "^5.1.2",
+    "pusher-js": "^8.0.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.43.9",

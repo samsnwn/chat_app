@@ -10,7 +10,6 @@ import { z } from 'zod'
 export async function POST(req: Request) {
   try {
     const body = await req.json()
-    console.log(body)
 
     const { email: emailToAdd } = addFriendValidator.parse(body.email)
 
@@ -24,7 +23,6 @@ export async function POST(req: Request) {
     }
 
     const session = await getServerSession(authOptions)
-    console.log(session)
 
     if (!session) {
       return new Response('Unauthorized', { status: 401 })
